@@ -1,4 +1,4 @@
-ceps = (
+ceps = [
     "06755962",
     828459,
     "9294510",
@@ -14,7 +14,7 @@ ceps = (
     "05554865",
     "2584884",
     25876954,
-)
+]
 
 for cep in ceps:
     cep = str(cep)
@@ -25,3 +25,4 @@ for cep in ceps:
         print(cep_corrigido)
     else:
         print(cep)
+        
