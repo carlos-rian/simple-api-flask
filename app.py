@@ -44,22 +44,40 @@ def ler_ceps():
         return []
 
 
+@app.route("/ler")
+def ler():
+    # logo de cara vou chamar a função que me retorna todos os ceps
+    # que estão no meu arquivo ceps.txt, essa função irá me retorna uma lista.
+    ceps = ler_ceps()
+    # o navegador só entende string/texto lembra, para isso antes de responder o navegador.
+    # vamos converter os dados para string. Porém antes de converter vamos verificar se a variável
+    # ceps não está vazia, para isso use o if.
+    if ceps == []:
+        # se for vazio, eu retorno uma mensagem para o navegador, informando.
+        return "Olá não tem nenhum cep."
+    else:
+        # se tiver dados, eu converto para str e retorno para o navegador os ceps.
+        return str(ceps)
+
+
 def adicionar_cep(cep):
     # Essa função irá receber um cep como parâmetro, irá abrir o arquivo de cep em modo de append.
     # Em seguida vai escrever o cep recebido no final do arquivo.
     # Para isso use a função "open" para abrir o arquivo e a função .write para escrever.
     # Veja o arquivo ler_escrever_adicionar.py dentro da pasta help.
-    # Essa função deve retornar um Booleano, caso tenha inserido o cep.
-    # return True, caso dê um erro retorne um "False", isso já está implementado.
+    # Essa função deve retornar um Booleano, caso tenha inserido o cep return True,
+    # Caso dê um erro retorne um "False", isso já está implementado.
 
     try:
-        # Deu código irá aqui. Apague o "pass" e digite seu código antes do return.
+        # Seu código irá aqui. Apague o "pass" e digite seu código antes do return True.
         # Caso o seu código esteja correto ele irá retornar o True,
         # Caso dê erro irá printar o erro e retornar False.
         pass
         return True
     except Exception as error:
+        # irei printar o erro que aconteceu.
         print(error)
+        # caso entre na exception eu retorno um False
         return False
 
 
@@ -78,22 +96,6 @@ def adicionar():
     else:
         # eu vou retornar uma mensagem informando que deu erro ao inserir o cep.
         return f"Desculp o cep: {meu_cep} não pode ser inserido."
-
-
-@app.route("/ler")
-def ler():
-    # logo de cara vou chamar a função que me retorna todos os ceps
-    # que estão no meu arquivo ceps.txt, essa função irá me retorna uma lista.
-    ceps = ler_ceps()
-    # o navegador só entende string/texto lembra, para isso antes de responder o navegador.
-    # vamos converter os dados para string. Porém antes de converter vamos verificar se a variável
-    # ceps não está vazia, para isso use o if.
-    if ceps == []:
-        # se for vazio, eu retorno uma mensagem para o navegador, informando.
-        return "Olá não tem nenhum cep."
-    else:
-        # se tiver dados, eu converto para str e retorno para o navegador os ceps.
-        return str(ceps)
 
 
 app.run(debug=True)
