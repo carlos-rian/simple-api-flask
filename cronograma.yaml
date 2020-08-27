@@ -1,0 +1,20 @@
+aula_01:
+  - Variaveis
+  - Arrays
+  - Venv
+  - Terminal Interativo
+
+aula_02:
+  - Dicionários
+  - Abertura de Arquivos
+  - Flask
+
+aula_03:
+  - Organizar Projeto
+    - Poetry
+      - Novo Gerenciador de Pacotes
+  - Biblioteca OS
+
+aula_04:
+  - Flask - Explicar Estrutura
+  - Manipulação de Dicionário

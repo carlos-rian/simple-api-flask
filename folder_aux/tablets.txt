@@ -1,0 +1,16 @@
+cdvend={codigo}
+nomvend={vendedor} 
+numped={pedido}
+versis= 3.0.0.99
+ip=200.186.96.250
+porta= 3652
+hostsmtp=200.186.96.246
+portasmtp=25
+portapop=110
+usuemail=wconnect
+senhaemail=rb@14r7
+remetemailerr=sistemas@wurth.com.br
+destemailerr=fabio.veiga@wurth.com.br
+tempcomuni=0
+tempoversao=0
+tempoenviaemail=0
