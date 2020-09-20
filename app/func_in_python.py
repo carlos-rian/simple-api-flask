@@ -9,7 +9,7 @@
 # - essa palavra é o que diferencia uma variavel de uma função/definição.
 # - nossa primeira função irá criar somar dois valores.
 
-# def    = definição/função
+# def    = definição/função/método
 # somar  = nome da definição/função
 # x      = primeiro valor valor númerico
 # y      = segundo valor númerico
@@ -18,8 +18,12 @@
 #          somente pra especificar o retorno da função.
 
 
-def somar(x, y):
-    return x + y
+def subtrair(funcao):
+    ...
+
+
+# def somar(x, y):
+#     return x * y
 
 
 # o python a partir da versão 3.5 lançada em 2016.
@@ -37,7 +41,18 @@ def somar(x, y):
 #     por exemplo: x: int onde x é a variavel e int é o tipo.
 #     também temos o sinal de menos + maior após os parenteses, que informa qual o valor retornado.
 #     neste caso a função recebe dois inteiros e retorna um inteiro.
+
+
 def soma(x: int, y: int) -> int:
+    """Essa função soma dois valores inteiro.
+
+    Args:
+        x (int): Informe o primeira valor do tipo inteiro
+        y (int): Informe o segundo valor do tipo inteiro
+
+    Returns:
+        int: Irá retornar o resultado da soma dos dois valores
+    """
     return x + y
 
 
@@ -89,3 +104,4 @@ def soma(x: int, y: int) -> int:
 # - essa função será responsável por executar todo o processo desde do inicio.
 # - ela deve chamar a função que gera o dicionario.
 # - após receber o retorno do dict, passe esses dados para a função que irá salvar os dados.
+
