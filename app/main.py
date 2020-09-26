@@ -62,3 +62,27 @@ def json():
 # código de status: 200
 # headers: do tipo application json
 # caso não esteja, retorne uma mensagem informando que não foi encontrado e retorne 400 e o header como application json
+
+
+# como retornar html ao invés de uma string ou array.
+from flask import render_template
+
+
+@app.route("/index")
+def index():
+    return render_template("index.html")
+
+
+@app.route("/for/<nome>")
+def index_for(nome):
+    title = "olá eu sou o {nome}"
+    users = [{"username": nome}]
+    return render_template("for.jinja", title=title, users=users)
+
+
+@app.route("/if/<nome>")
+def index_if(nome):
+    title = "olá eu sou o {nome}"
+    users = [{"username": nome}]
+    return render_template("if.jinja", title=title, users=users)
+
