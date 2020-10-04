@@ -205,5 +205,4 @@ def update_pessoa(id: int):
         if id in value:
             banco_de_dados[index].update({id: dados})
             return ({"message": "dados atualizados"}, 200)
-
     return ({"message": "dados invalidos"}, 400)
