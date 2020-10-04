@@ -7,7 +7,8 @@ Use todo o conhecimento passado na última aula, por exemplo status code, method
 C: CREATE -> POST
     - Crie um endpoint que irá receber os dados no 
     body como json e salve os dados no banco de item,
-    o id do banco deve ser adicionado automaticamente e não pode se repetir. Os dados recebidos devem ser validados antes de ser inseridos.
+    o id do banco deve ser adicionado automaticamente e não pode se repetir. 
+    Os dados recebidos devem ser validados antes de ser inseridos.
 
 R: READ -> GET
     - Crie um endpoint que irá receber um id no path da url, o id não é obrigatório.
@@ -17,10 +18,14 @@ R: READ -> GET
 
 U: UPDATE -> PUT ou PATCH
     - Crie um endpoint que irá receber um id no path da url e os novos dados como json no body.
-    Com o id você deve verificar se o cadastro existe, caso exista você deve fazer update com os novos dados que foram enviados como json. Não esqueça de validar os dados recebidos. Caso o id não exista retorne uma mensagem de erro informando. 
+    Com o id você deve verificar se o cadastro existe, caso exista você deve fazer update com 
+    os novos dados que foram enviados como json. 
+    Não esqueça de validar os dados recebidos. Caso o id não exista retorne uma mensagem de erro informando. 
 
 D: DELETE -> DELETE
-    - Crie um endpoint que irá receber um id no path da url, verifique se o id existe, caso exista remova o usuário e retorne uma mensagem informando que o usuário foi removido e quais dados foram removidos. Caso não, retorne uma mensagem informando o erro.
+    - Crie um endpoint que irá receber um id no path da url, verifique se o id existe, 
+    caso exista remova o usuário e retorne uma mensagem informando que o usuário foi removido 
+    e quais dados foram removidos. Caso não, retorne uma mensagem informando o erro.
 ```
 
 Qual o formato dos dados que você deve inserir? Você deve validar e inserir os dados no formato json (dict) abaixo.
