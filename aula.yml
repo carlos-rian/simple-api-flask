@@ -1,0 +1,10 @@
+passos:
+  - renomear aquivo
+  - criar novo main
+  - criar .env
+  - criar pasta db
+  - criar model.py
+  - criar docker-compose.yaml
+  - subir o banco
+  - conectar no datagrip
+  - fazer crud

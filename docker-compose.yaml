@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:12-alpine
+    container_name: banco-de-dados
+    volumes:
+      - ./.data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=usuario
+    ports:
+      - 5050:5432
+    restart: always
