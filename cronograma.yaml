@@ -11,13 +11,42 @@ aula_02:
 
 aula_03:
   - Organizar Projeto
-    - Poetry
-      - Novo Gerenciador de Pacotes
+  - Poetry
+  - Novo Gerenciador de Pacotes
   - Biblioteca OS
 
 aula_04:
-  - Funções
-  
+  - Funções - argumentos e tipos
+
 aula_05:
   - Flask - Explicar Estrutura
   - Manipulação de Dicionário
+
+aula_06:
+  - Flask - estrutura basica de retorno
+  - organização de projeto
+
+aula_07:
+  - Flask - decorators de endpoints
+  - funções em python
+
+aula_08:
+  - Flask - endpoints
+
+aula_09:
+  - Flask - jinja e html
+
+aula_10:
+  - Flask - formulário html e upload de arquivos
+  - Flask - banco de dados em momoria
+
+aula_11:
+  - Flask - organização de projeto
+  - Banco de dados usando python - SQL Puro
+  - docker
+  - postgres
+
+aula_12:
+  - SQLAlchemy ORM
+  - Flask - Banco de dados com ORM
+  - Modelando tabelas
